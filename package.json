@@ -21,9 +21,8 @@
   "scripts": {
     "lint": "eslint src/**/*.js",
     "dev": "nodemon --exec \"npm run lint && npm start\" --ignore public/js --ignore public/javascript --ignore public/javascripts",
-    "start": "ENV=dev babel-node ./src/bin/www.js",
+    "start": "ENV=prod node .dist/bin/www.js",
     "build": "babel src -d .dist",
-    "serve": "ENV=prod node .dist/bin/www.js",
     "flow-init": "flow init",
     "flow-status": "flow status",
     "flow-typed-install": "flow-typed install",
