@@ -1,0 +1,80 @@
+.twitterFeed{
+display: inline-block;
+float: left;
+width: 120%;
+}
+
+@media only screen and (min-width: 768px){
+
+  /* .twitterFeed{
+  display: block;
+  width: 20%;
+  } */
+
+.upper{
+  height: 80vh;
+}
+div#tweetTweet.col.s4{
+  /* display: none; */
+  /* border-style: solid;
+  border-color: purple; */
+  /* display: flex; */
+}
+div#lowerBody.col.s8{
+  /* display: none; */
+  /* border-style: solid;
+  border-color: blue; */
+  width: 80vw;
+}
+.medium.material-icons{
+  /* border-style: solid;
+  border-color: red; */
+}
+.randomNum{
+  /* font-size: 15px; */
+  /* justify-content: center; */
+}
+
+.engagement{
+  /* border-style: solid;
+  border-color: black;
+  text-align: right; */
+
+}
+.card-action{
+  /* font-size: 25px; */
+  /* border-style: solid;
+  border-color: purple; */
+}
+
+}
+
+@media only screen and (max-width: 411px){
+
+  .twitterFeed{
+    display: none;
+  }
+  div.col.s8{
+    /* display: none; */
+    /* border-style: solid;
+    border-color: yellow; */
+    width: 100vw;
+  }
+  div#tweetTweet.col.s4{
+    /* display: none; */
+    /* border-style: solid;
+    border-color: purple; */
+    display: none;
+  }
+  div#lowerBody.col.s8{
+    /* display: none; */
+    /* border-style: solid;
+    border-color: blue; */
+    width: 100vw;
+  }
+
+ div#masterCard.single.col.s4{
+   width: 100vw;
+ }
+
+}
