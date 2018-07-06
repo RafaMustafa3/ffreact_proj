@@ -62,8 +62,8 @@ app.use(limiter);
 app.use((0, _helmet2.default)());
 
 /* Template engine */
-app.set('views', _path2.default.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+// app.set('views', path.join(__dirname, 'views'))
+// app.set('view engine', 'jade')
 
 /* Morgan logger */
 app.use((0, _morgan2.default)('dev'));
@@ -89,24 +89,25 @@ app.use(function (req, res, next) {
 });
 
 /* 500 handling */
-if (process.env.ENV === 'dev') {
-    app.use(function (err, req, res, next) {
-        res.status(err.status || 500);
-        res.send({
-            message: err.message,
-            status: err.status,
-            error: err
-        });
-    });
-}
+// if (process.env.ENV === 'dev') {
+//   app.use((err, req, res, next) => {
+//       res.status(err.status || 500)
+//       console.log("all fine up to here ------->");
+//       res.send({
+//           message: err.message,
+//           status: err.status,
+//           error: err
+//       })
+//   })
+// }
 
-app.use(function (err, req, res, next) {
-    res.status(err.status || 500);
-    res.send({
-        message: err.message,
-        status: err.status,
-        err: {}
-    });
-});
+// app.use((err, req, res, next) => {
+//     res.status(err.status || 500)
+//     res.send({
+//         message: err.message,
+//         status: err.status,
+//         err: {}
+//     })
+// })
 
 module.exports = app;

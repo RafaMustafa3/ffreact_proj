@@ -29,7 +29,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "port": "5000",
     "build": "react-scripts build",
     "postbuild": "rm -rf ../public/* && cp -r build/* ../public/",
     "test": "react-scripts test --env=jsdom",
